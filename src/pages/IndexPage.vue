@@ -6,7 +6,10 @@
       <div class="col-12 col-md-6" style="background-color: aliceblue;height: 400px;width: 350px">
       </div>
     </div>
-    <a class="text-white full-width text-center">Author: MC_XiaoHei</a>
+    <div>
+      <a>Author: </a><a style="text-decoration: none;color: #fff" href="https://github.com/MC-XiaoHei">MC_XiaoHei</a><a> Src: </a><a
+      style="text-decoration: none;color: #fff" href="https://github.com/MC-XiaoHei/Abrezk.me">GitHub</a><a> Opensource below The MIT License.</a>
+    </div>
   </q-page>
 </template>
 
