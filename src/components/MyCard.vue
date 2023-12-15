@@ -12,13 +12,7 @@
 // TODO: 兼容firefox
 /* This was made with GlassGenerator.netlify.app */
 .glass-container
-  gap: 20px
-  border-radius: 4px
-  backdrop-filter: blur(10px)
-  -webkit-backdrop-filter: blur(10px)
+  backdrop-filter: blur(15px)
+  -webkit-backdrop-filter: blur(15px)
   background-color: rgba(0,191,255, 0)
-  border: 0 rgba(255,255,255,0.4) solid
-  border-bottom: 0 rgba(40,40,40,0.35) solid
-  border-right: 0 rgba(40,40,40,0.35) solid
-
 </style>
