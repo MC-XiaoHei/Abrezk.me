@@ -15,6 +15,7 @@
   gap: 20px
   border-radius: 4px
   backdrop-filter: blur(10px)
+  -webkit-backdrop-filter: blur(10px)
   background-color: rgba(0,191,255, 0)
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px
   border: 0 rgba(255,255,255,0.4) solid
