@@ -57,4 +57,6 @@ import MyCard from 'components/MyCard.vue';
 .main-div
   @media (max-width: 1024px)
     width: 350px
+  @media (min-width: 1440px)
+    scale: 1.5
 </style>
