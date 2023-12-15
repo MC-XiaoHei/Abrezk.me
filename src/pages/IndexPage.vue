@@ -26,9 +26,9 @@
         </div>
       </div>
       <div class="col-12 text-center">
-        <a>Author: </a><a style="text-decoration: none;color: #fff"
-                          href="https://github.com/MC-XiaoHei">MC_XiaoHei</a><a> Src: </a><a
-        style="text-decoration: none;color: #fff" href="https://github.com/MC-XiaoHei/Abrezk.me">GitHub</a>
+        <a>Design by </a>
+        <a style="text-decoration: none;color: #fff"
+           href="https://github.com/MC-XiaoHei">MC_XiaoHei</a>
       </div>
     </div>
   </q-page>
