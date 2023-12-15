@@ -1,5 +1,8 @@
 <template>
+
   <q-page class="row flex-center">
+    <q-img no-native-menu no-transition fetchpriority="high" class="fit" fit="cover" src="/background.jpg"
+           style="z-index: -1;position: absolute"/>
     <div class="flex-center row main-div q-gutter-y-md q-gutter-x-xs">
       <a class="col-12 text-center text-h6">不是所有破碎的事情都值得修补。</a>
       <div class="col-6 row q-col-gutter-x-md q-pr-md-sm" style="height: 300px;width: 350px">
