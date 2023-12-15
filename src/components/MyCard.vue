@@ -1,4 +1,4 @@
-ge<script setup lang="ts">
+<script setup lang="ts">
 
 </script>
 
