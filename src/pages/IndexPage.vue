@@ -1,7 +1,7 @@
 <template>
   <q-page class="row flex-center">
     <div class="flex-center row main-div q-gutter-y-md q-gutter-x-xs">
-      <div class="col-12 col-md-6 row q-col-gutter-x-md" style="height: 300px;width: 350px">
+      <div class="col-12 col-md-6 row q-col-gutter-x-md q-pr-sm" style="height: 300px;width: 350px">
         <div class="col-5 full-height">
           <div style="height: 220px">
             <my-card>
@@ -24,7 +24,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 reverse-md row q-col-gutter-x-md" style="height: 300px;width: 350px">
+      <div class="col-12 col-md-6 reverse-md row q-col-gutter-x-md q-pl-sm" style="height: 300px;width: 350px">
         <div class="col-5 full-height">
           <my-card>
           </my-card>
