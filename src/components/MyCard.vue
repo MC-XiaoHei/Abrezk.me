@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <q-card class="full-width full-height glass-container">
+  <q-card class="fit glass-container">
     <slot/>
   </q-card>
 </template>
