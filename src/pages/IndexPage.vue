@@ -6,12 +6,17 @@
       <a class="col-12 text-center text-h6">{{ personalized_signature }}</a>
       <div class="col-6 row q-col-gutter-x-md q-pr-md-sm" style="height: 300px;width: 350px">
         <div class="col-5 full-height">
-          <div style="height: 220px">
+          <div>
             <my-card>
+              <img src="/images/avatar.jpg" alt="">
             </my-card>
           </div>
-          <div class="q-pt-md" style="height: 80px">
+          <div class="q-pt-md">
             <my-card>
+              <q-card-section>
+                社交媒体：
+                AAAaaa
+              </q-card-section>
             </my-card>
           </div>
         </div>
@@ -59,5 +64,8 @@ import personalized_signature from '../texts/personalized_signature';
   @media (max-width: 1024px)
     width: 350px
   @media (min-width: 1440px)
-    scale: 1.5
+    @supports (zoom: 1.5)
+      zoom: 1.5
+    @supports not (zoom: 1.5)
+      scale: 1.5
 </style>
