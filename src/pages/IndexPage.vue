@@ -67,25 +67,31 @@ const avatarHeight = ref(0);
 const draw = ref();
 const drawHeight = ref(0);
 
-let observer: MutationObserver | null = null;
+let avatarObserver: MutationObserver | null = null;
+let drawObserver: MutationObserver | null = null;
 
 onMounted(async () => {
   await nextTick();
   avatarHeight.value = avatar.value.offsetHeight;
   drawHeight.value = draw.value.offsetHeight;
 
-  observer = new MutationObserver(() => {
+  avatarObserver = new MutationObserver(() => {
     avatarHeight.value = avatar.value.offsetHeight;
+  });
+  drawObserver = new MutationObserver(() => {
     drawHeight.value = draw.value.offsetHeight;
   });
 
-  observer.observe(avatar.value, {attributes: true, childList: true, subtree: true});
-  observer.observe(draw.value, {attributes: true, childList: true, subtree: true});
+  avatarObserver.observe(avatar.value, {attributes: true, childList: true, subtree: true});
+  drawObserver.observe(draw.value, {attributes: true, childList: true, subtree: true});
 });
 
 onUnmounted(() => {
-  if (observer) {
-    observer.disconnect();
+  if (avatarObserver) {
+    avatarObserver.disconnect();
+  }
+  if (drawObserver) {
+    drawObserver.disconnect();
   }
 });
 </script>
