@@ -6,11 +6,13 @@
       <a class="col-12 text-center text-h6">{{ personalized_signature }}</a>
       <div class="col-6 row q-col-gutter-x-md q-pr-md-sm" style="height: 300px;width: 350px">
         <div class="col-5 full-height">
-          <div ref="avatar">
-            <my-card>
-              <img src="/images/avatar.jpg" alt="">
-            </my-card>
-          </div>
+          <q-responsive :ratio="1">
+            <div ref="avatar">
+              <my-card>
+                <img src="/images/avatar.jpg" alt="">
+              </my-card>
+            </div>
+          </q-responsive>
           <div class="q-pt-md" :style="'height:'+(300-avatarHeight)+'px'">
             <my-card>
               <q-card-section>
@@ -59,7 +61,7 @@
 <script setup lang="ts">
 import MyCard from 'components/MyCard.vue';
 import personalized_signature from '../texts/personalized_signature';
-import {nextTick, onMounted, onUnmounted, ref} from 'vue';
+import {nextTick, onMounted, ref} from 'vue';
 
 const avatar = ref();
 const avatarHeight = ref(0);
@@ -67,32 +69,10 @@ const avatarHeight = ref(0);
 const draw = ref();
 const drawHeight = ref(0);
 
-let avatarObserver: MutationObserver | null = null;
-let drawObserver: MutationObserver | null = null;
-
 onMounted(async () => {
   await nextTick();
   avatarHeight.value = avatar.value.offsetHeight;
   drawHeight.value = draw.value.offsetHeight;
-
-  avatarObserver = new MutationObserver(() => {
-    avatarHeight.value = avatar.value.offsetHeight;
-  });
-  drawObserver = new MutationObserver(() => {
-    drawHeight.value = draw.value.offsetHeight;
-  });
-
-  avatarObserver.observe(avatar.value, {attributes: true, childList: true, subtree: true});
-  drawObserver.observe(draw.value, {attributes: true, childList: true, subtree: true});
-});
-
-onUnmounted(() => {
-  if (avatarObserver) {
-    avatarObserver.disconnect();
-  }
-  if (drawObserver) {
-    drawObserver.disconnect();
-  }
 });
 </script>
 
