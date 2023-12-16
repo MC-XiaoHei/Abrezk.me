@@ -37,11 +37,13 @@
           </my-card>
         </div>
         <div class="col-7 full-height">
-          <q-responsive  style="height: 200px">
-            <my-card>
-            </my-card>
+          <q-responsive :ratio="1">
+            <div class="fit" ref="draw">
+              <my-card>
+              </my-card>
+            </div>
           </q-responsive>
-          <div class="q-pt-md" style="height: 100px">
+          <div class="q-pt-md" :style="'height:'+(300-drawHeight)+'px'">
             <my-card>
             </my-card>
           </div>
@@ -59,20 +61,26 @@ import MyCard from 'components/MyCard.vue';
 import personalized_signature from '../texts/personalized_signature';
 import {nextTick, onMounted, onUnmounted, ref} from 'vue';
 
-const avatar = ref()
-const avatarHeight = ref(0)
+const avatar = ref();
+const avatarHeight = ref(0);
+
+const draw = ref();
+const drawHeight = ref(0);
 
 let observer: MutationObserver | null = null;
 
 onMounted(async () => {
   await nextTick();
   avatarHeight.value = avatar.value.offsetHeight;
+  drawHeight.value = draw.value.offsetHeight;
 
   observer = new MutationObserver(() => {
     avatarHeight.value = avatar.value.offsetHeight;
+    drawHeight.value = draw.value.offsetHeight;
   });
 
-  observer.observe(avatar.value, { attributes: true, childList: true, subtree: true });
+  observer.observe(avatar.value, {attributes: true, childList: true, subtree: true});
+  observer.observe(draw.value, {attributes: true, childList: true, subtree: true});
 });
 
 onUnmounted(() => {
