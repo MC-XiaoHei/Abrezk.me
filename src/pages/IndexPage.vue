@@ -40,8 +40,29 @@
         </div>
         <div class="col-7 full-height">
           <q-responsive :ratio="1">
-            <div class="fit" ref="draw">
+            <div class="fit" ref="draw" style="overflow: hidden;position: relative;">
+              <div class="banner text-caption">
+                <p>我画的?画</p>
+              </div>
               <my-card>
+                <q-carousel
+                  animated
+                  v-model="slide"
+                  navigation
+                  infinite
+                  :autoplay="autoplay"
+                  transition-prev="slide-right"
+                  transition-next="slide-left"
+                  @mouseenter="autoplay = false"
+                  @mouseleave="autoplay = true"
+                  keep-alive
+                  class="fit carousel"
+                >
+                  <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg"/>
+                  <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg"/>
+                  <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg"/>
+                  <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg"/>
+                </q-carousel>
               </my-card>
             </div>
           </q-responsive>
@@ -69,6 +90,9 @@ const avatarHeight = ref(0);
 const draw = ref();
 const drawHeight = ref(0);
 
+const slide = ref(1);
+const autoplay = ref(true);
+
 onMounted(async () => {
   await nextTick();
   avatarHeight.value = avatar.value.offsetHeight;
@@ -85,4 +109,29 @@ onMounted(async () => {
       zoom: 1.5
     @supports not (zoom: 1.5)
       scale: 1.5
+
+.carousel
+  @supports (zoom: 0.6)
+    zoom: 0.6
+  @supports not (zoom: 0.6)
+    scale: 0.6
+
+.banner
+  position: absolute
+  top: 18px
+  right: -75px
+  width: 200px
+  height: 12px
+  background-color: red
+  transform: rotate(45deg)
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 1
+
+.banner p
+  margin-top: 16px
+  color: white
+  font-size: 10px
+  text-align: center
 </style>
