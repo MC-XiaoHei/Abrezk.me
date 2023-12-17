@@ -17,14 +17,14 @@
           </div>
         </div>
         <div class="col-7 full-height">
-          <div style="height: 160px">
+          <div ref="profile">
             <my-card>
               <q-card-section>
                 <div class="text-weight-bold text" v-html="personalized_profile"/>
               </q-card-section>
             </my-card>
           </div>
-          <div class="q-pt-md" style="height: 140px">
+          <div class="q-pt-md" :style="'height:'+(300-profileHeight)+'px'">
             <my-card>
               <q-card-section class="text-weight-bold text">
                 近期动态：
@@ -94,12 +94,16 @@ const avatarHeight = ref(0);
 const draw = ref();
 const drawHeight = ref(0);
 
+const profile = ref();
+const profileHeight = ref(0);
+
 const slide = ref(1);
 const autoplay = ref(true);
 
 onMounted(async () => {
   await nextTick();
   drawHeight.value = draw.value.offsetHeight;
+  profileHeight.value = profile.value.offsetHeight;
 });
 </script>
 
