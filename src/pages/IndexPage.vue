@@ -6,13 +6,11 @@
       <a class="col-12 text-center text-h6">{{ personalized_signature }}</a>
       <div class="col-6 row q-col-gutter-x-md q-pr-md-sm" style="height: 300px;width: 350px">
         <div class="col-5 full-height">
-          <q-responsive :ratio="1">
-            <div ref="avatar">
-              <my-card>
-                <img src="/images/avatar.jpg" alt="">
-              </my-card>
-            </div>
-          </q-responsive>
+          <div ref="avatar">
+            <my-card>
+              <img src="/images/avatar.jpg" @load="avatarHeight=avatar.offsetHeight" alt="">
+            </my-card>
+          </div>
           <div class="q-pt-md" :style="'height:'+(300-avatarHeight)+'px'">
             <my-card>
             </my-card>
@@ -77,7 +75,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 text-center text-caption">
+      <div class="col-12 text-center text-weight-bold text">
         <a>关于本站</a>
       </div>
     </div>
@@ -101,7 +99,6 @@ const autoplay = ref(true);
 
 onMounted(async () => {
   await nextTick();
-  avatarHeight.value = avatar.value.offsetHeight;
   drawHeight.value = draw.value.offsetHeight;
 });
 </script>
