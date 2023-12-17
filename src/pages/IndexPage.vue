@@ -5,26 +5,26 @@
     <div class="flex-center row main-div q-gutter-y-md q-gutter-x-xs">
       <a class="col-12 text-center text-h6">{{ personalized_signature }}</a>
       <div class="col-6 row q-col-gutter-x-md q-pr-md-sm" style="height: 300px;width: 350px">
-        <div class="col-5 full-height">
-          <div ref="avatar">
+        <div class="col-5 full-height" style="display: flex;flex-direction: column">
+          <div>
             <my-card>
-              <img src="/images/avatar.jpg" @load="avatarHeight=avatar.offsetHeight" alt="">
+              <img src="/images/avatar.jpg" alt="">
             </my-card>
           </div>
-          <div class="q-pt-md" :style="'height:'+(300-avatarHeight)+'px'">
+          <div class="q-pt-md" style="flex: 1 1 auto">
             <my-card>
             </my-card>
           </div>
         </div>
-        <div class="col-7 full-height">
-          <div ref="profile">
+        <div class="col-7 full-height" style="display: flex;flex-direction: column">
+          <div>
             <my-card>
               <q-card-section>
                 <div class="text-weight-bold text" v-html="personalized_profile"/>
               </q-card-section>
             </my-card>
           </div>
-          <div class="q-pt-md" :style="'height:'+(300-profileHeight)+'px'">
+          <div class="q-pt-md" style="flex: 1 1 auto">
             <my-card>
               <q-card-section class="text-weight-bold text">
                 近期动态：
@@ -47,9 +47,9 @@
             </q-card-section>
           </my-card>
         </div>
-        <div class="col-7 full-height">
+        <div class="col-7 full-height" style="display: flex;flex-direction: column">
           <q-responsive :ratio="1">
-            <div class="fit" ref="draw" style="overflow: hidden;position: relative;">
+            <div class="fit" style="overflow: hidden;position: relative">
               <div class="banner text-caption">
                 <p>我画的?画</p>
               </div>
@@ -75,7 +75,7 @@
               </my-card>
             </div>
           </q-responsive>
-          <div class="q-pt-md" :style="'height:'+(300-drawHeight)+'px'">
+          <div class="q-pt-md" style="flex: 1 1 auto">
             <my-card>
             </my-card>
           </div>
@@ -91,26 +91,11 @@
 <script setup lang="ts">
 import MyCard from 'components/MyCard.vue';
 import personalized_signature from '../texts/personalized_signature';
-import {nextTick, onMounted, ref} from 'vue';
+import {ref} from 'vue';
 import personalized_profile from '../texts/personal-profile';
-
-const avatar = ref();
-const avatarHeight = ref(0);
-
-const draw = ref();
-const drawHeight = ref(0);
-
-const profile = ref();
-const profileHeight = ref(0);
 
 const slide = ref(1);
 const autoplay = ref(true);
-
-onMounted(async () => {
-  await nextTick();
-  drawHeight.value = draw.value.offsetHeight;
-  profileHeight.value = profile.value.offsetHeight;
-});
 </script>
 
 <style lang="sass">
