@@ -5,18 +5,19 @@
     <div class="flex-center row main-div q-gutter-y-md q-gutter-x-xs">
       <a class="col-12 text-center text-h6">{{ personalized_signature }}</a>
       <div class="col-6 row q-col-gutter-x-md q-pr-md-sm" style="height: 300px;width: 350px">
-        <div class="col-5 full-height" style="display: flex;flex-direction: column">
+        <div class="col-5 full-height column">
           <div>
             <my-card>
               <img src="/images/avatar.jpg" alt="">
             </my-card>
           </div>
-          <div class="q-pt-md" style="flex: 1 1 auto">
+          <div class="q-pt-md col-grow">
             <my-card>
+
             </my-card>
           </div>
         </div>
-        <div class="col-7 full-height" style="display: flex;flex-direction: column">
+        <div class="col-7 full-height column">
           <div>
             <my-card>
               <q-card-section>
@@ -24,7 +25,7 @@
               </q-card-section>
             </my-card>
           </div>
-          <div class="q-pt-md" style="flex: 1 1 auto">
+          <div class="q-pt-md col-grow">
             <my-card>
               <q-card-section class="text-weight-bold text">
                 近期动态：
@@ -67,17 +68,19 @@
                   keep-alive
                   class="fit carousel"
                 >
-                  <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg"/>
-                  <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg"/>
-                  <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg"/>
-                  <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg"/>
+                  <q-carousel-slide v-for="src in drawImageIndex" :key="src" :name="src" :img-src="src"/>
                 </q-carousel>
               </my-card>
             </div>
           </q-responsive>
           <div class="q-pt-md" style="flex: 1 1 auto">
-            <my-card>
-            </my-card>
+<!--            <div class="fit row" style="gap: 8px;flex-wrap: nowrap">-->
+<!--              <my-card :fit="false"-->
+<!--                       :style="'min-width:'+ (index === workVisibleIndex) ? '16px' : '1 1 auto'"-->
+<!--                       v-for="(src,index) in workImageIndex" :key="src">-->
+
+<!--              </my-card>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
@@ -90,12 +93,16 @@
 
 <script setup lang="ts">
 import MyCard from 'components/MyCard.vue';
-import personalized_signature from '../texts/personalized_signature';
 import {ref} from 'vue';
-import personalized_profile from '../texts/personal-profile';
+import personalized_signature from 'src/dynamic/personalized_signature';
+import personalized_profile from 'src/dynamic/personal-profile';
+import drawImageIndex from 'src/dynamic/draw-image-index';
+import workImageIndex from 'src/dynamic/work-image-index';
 
 const slide = ref(1);
 const autoplay = ref(true);
+
+const workVisibleIndex = ref(0);
 </script>
 
 <style lang="sass">

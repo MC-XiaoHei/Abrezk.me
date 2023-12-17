@@ -1,9 +1,5 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <q-card class="fit glass-container">
+  <q-card class="glass-container fit">
     <slot/>
   </q-card>
 </template>
