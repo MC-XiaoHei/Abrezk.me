@@ -15,10 +15,6 @@
           </q-responsive>
           <div class="q-pt-md" :style="'height:'+(300-avatarHeight)+'px'">
             <my-card>
-              <q-card-section>
-                社交媒体：
-                AAAaaa
-              </q-card-section>
             </my-card>
           </div>
         </div>
@@ -26,12 +22,18 @@
           <div style="height: 160px">
             <my-card>
               <q-card-section>
-                <div class="text-weight-bold personal-profile" v-html="personalized_profile"/>
+                <div class="text-weight-bold text" v-html="personalized_profile"/>
               </q-card-section>
             </my-card>
           </div>
           <div class="q-pt-md" style="height: 140px">
             <my-card>
+              <q-card-section class="text-weight-bold text">
+                近期动态：
+              </q-card-section>
+              <q-card-section class="fit text-center text-caption">
+                即将开放
+              </q-card-section>
             </my-card>
           </div>
         </div>
@@ -139,6 +141,6 @@ onMounted(async () => {
   font-size: 10px
   text-align: center
 
-.personal-profile
+.text
   font-size: 10px
 </style>
