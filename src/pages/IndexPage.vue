@@ -25,6 +25,9 @@
         <div class="col-7 full-height">
           <div style="height: 160px">
             <my-card>
+              <q-card-section>
+                <div class="text-weight-bold personal-profile" v-html="personalized_profile"/>
+              </q-card-section>
             </my-card>
           </div>
           <div class="q-pt-md" style="height: 140px">
@@ -83,6 +86,7 @@
 import MyCard from 'components/MyCard.vue';
 import personalized_signature from '../texts/personalized_signature';
 import {nextTick, onMounted, ref} from 'vue';
+import personalized_profile from '../texts/personal-profile';
 
 const avatar = ref();
 const avatarHeight = ref(0);
@@ -134,4 +138,7 @@ onMounted(async () => {
   color: white
   font-size: 10px
   text-align: center
+
+.personal-profile
+  font-size: 10px
 </style>
