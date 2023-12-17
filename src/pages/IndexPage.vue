@@ -39,6 +39,12 @@
       <div class="col-6 reverse-md row q-col-gutter-x-md q-pl-md-sm" style="height: 300px;width: 350px">
         <div class="col-5 full-height">
           <my-card>
+            <q-card-section class="text-weight-bold text">
+              留言板：
+            </q-card-section>
+            <q-card-section class="fit text-center text-caption" style="line-height: 150px">
+              即将开放
+            </q-card-section>
           </my-card>
         </div>
         <div class="col-7 full-height">
