@@ -74,13 +74,16 @@
             </div>
           </q-responsive>
           <div class="q-pt-md" style="flex: 1 1 auto">
-<!--            <div class="fit row" style="gap: 8px;flex-wrap: nowrap">-->
-<!--              <my-card :fit="false"-->
-<!--                       :style="'min-width:'+ (index === workVisibleIndex) ? '16px' : '1 1 auto'"-->
-<!--                       v-for="(src,index) in workImageIndex" :key="src">-->
+            <div class="fit row justify-start items-start content-start no-wrap"
+                 style="gap: 8px">
+              <my-card :fit="false"
+                       class="full-height"
+                       :class="index === workVisibleIndex ? 'col-grow' : 'col-1'"
+                       @click="workVisibleIndex = index"
+                       v-for="(src,index) in workImageIndex" :key="src">
 
-<!--              </my-card>-->
-<!--            </div>-->
+              </my-card>
+            </div>
           </div>
         </div>
       </div>

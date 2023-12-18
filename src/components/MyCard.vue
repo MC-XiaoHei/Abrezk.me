@@ -1,5 +1,14 @@
+<script setup lang="ts">
+const props = defineProps({
+  fit: {
+    type: Boolean,
+    default: true
+  }
+});
+</script>
+
 <template>
-  <q-card class="glass-container fit">
+  <q-card class="glass-container" :class="props.fit?'fit':''">
     <slot/>
   </q-card>
 </template>
