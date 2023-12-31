@@ -76,16 +76,12 @@
           <div class="q-pt-md" style="flex: 1 1 auto">
             <div class="fit row justify-start items-start content-start no-wrap"
                  style="gap: 8px">
-              <my-card :fit="false"
-                       class="full-height"
-                       :class="workClasses[index]"
-                       @click="setWorkVisibleIndex(index)"
-                       ref="works"
+              <q-card  style="background-color: rgba(0,0,0,0.5)"
+                       class="full-height animation"
+                       :style="{ flexGrow: workVisibleIndex === index ? 1 : 0, minWidth: '15px' }"
+                       @click="workVisibleIndex = index"
                        v-for="(src,index) in workImageIndex" :key="src">
-                <div class="width-transition">
-
-                </div>
-              </my-card>
+              </q-card>
             </div>
           </div>
         </div>
@@ -99,7 +95,7 @@
 
 <script setup lang="ts">
 import MyCard from 'components/MyCard.vue';
-import {onMounted, ref} from 'vue';
+import {ref} from 'vue';
 import personalized_signature from 'src/dynamic/personalized_signature';
 import personalized_profile from 'src/dynamic/personal-profile';
 import drawImageIndex from 'src/dynamic/draw-image-index';
@@ -107,25 +103,13 @@ import workImageIndex from 'src/dynamic/work-image-index';
 
 const slide = ref(1);
 const autoplay = ref(true);
-
-let workVisibleIndex = 0;
-const works = ref([]);
-const workClasses = ref(['col-grow']);
-
-function setWorkVisibleIndex(index: number) {
-  workVisibleIndex = index;
-  workClasses.value[workVisibleIndex] = 'col-auto';
-  workClasses.value[index] = 'col-grow';
-}
-
-onMounted(() => {
-  for (let i = 1; i < workImageIndex.length; i++) {
-    workClasses.value.push('col-1');
-  }
-});
+let workVisibleIndex = ref(0);
 </script>
 
 <style lang="sass">
+.animation
+  transition: width 0.5s linear, flex-grow 0.5s linear
+
 .main-div
   @media (max-width: 1024px)
     width: 350px
