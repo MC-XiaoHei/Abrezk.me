@@ -114,17 +114,22 @@ let workVisibleIndex = ref(0);
 .main-div
   @media (max-width: 1024px)
     width: 350px
-  @media (max-width: 450px) and (max-height: 780px)
+  @media (min-height: 600px)
+    @supports (zoom: 0.8)
+      zoom: 0.8
+    @supports not (zoom: 0.8)
+      scale: 0.8
+  @media (min-height: 780px)
     @supports (zoom: 0.9)
       zoom: 0.9
     @supports not (zoom: 0.9)
       scale: 0.9
-  @media (max-width: 550px) and (max-height: 850px)
+  @media (min-height: 850px)
     @supports (zoom: 1)
       zoom: 1
     @supports not (zoom: 1)
       scale: 1
-  @media (max-width: 550px) and (max-height: 1000px)
+  @media (min-height: 1000px)
     @supports (zoom: 1.1)
       zoom: 1.1
     @supports not (zoom: 1.1)
