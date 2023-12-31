@@ -78,10 +78,13 @@
                  style="gap: 8px">
               <my-card :fit="false"
                        class="full-height"
-                       :class="index === workVisibleIndex ? 'col-grow' : 'col-1'"
-                       @click="workVisibleIndex = index"
+                       :class="workClasses[index]"
+                       @click="setWorkVisibleIndex(index)"
+                       ref="works"
                        v-for="(src,index) in workImageIndex" :key="src">
+                <div class="width-transition">
 
+                </div>
               </my-card>
             </div>
           </div>
@@ -96,7 +99,7 @@
 
 <script setup lang="ts">
 import MyCard from 'components/MyCard.vue';
-import {ref} from 'vue';
+import {onMounted, ref} from 'vue';
 import personalized_signature from 'src/dynamic/personalized_signature';
 import personalized_profile from 'src/dynamic/personal-profile';
 import drawImageIndex from 'src/dynamic/draw-image-index';
@@ -105,23 +108,67 @@ import workImageIndex from 'src/dynamic/work-image-index';
 const slide = ref(1);
 const autoplay = ref(true);
 
-const workVisibleIndex = ref(0);
+let workVisibleIndex = 0;
+const works = ref([]);
+const workClasses = ref(['col-grow']);
+
+function setWorkVisibleIndex(index: number) {
+  workVisibleIndex = index;
+  workClasses.value[workVisibleIndex] = 'col-auto';
+  workClasses.value[index] = 'col-grow';
+}
+
+onMounted(() => {
+  for (let i = 1; i < workImageIndex.length; i++) {
+    workClasses.value.push('col-1');
+  }
+});
 </script>
 
 <style lang="sass">
 .main-div
   @media (max-width: 1024px)
     width: 350px
-  @media (min-width: 1440px)
+  @media (max-width: 450px) and (max-height: 780px)
+    @supports (zoom: 0.9)
+      zoom: 0.9
+    @supports not (zoom: 0.9)
+      scale: 0.9
+  @media (max-width: 550px) and (max-height: 850px)
+    @supports (zoom: 1)
+      zoom: 1
+    @supports not (zoom: 1)
+      scale: 1
+  @media (max-width: 550px) and (max-height: 1000px)
+    @supports (zoom: 1.1)
+      zoom: 1.1
+    @supports not (zoom: 1.1)
+      scale: 1.1
+  @media (min-width: 1200px)
+    @supports (zoom: 1.4)
+      zoom: 1.4
+    @supports not (zoom: 1.4)
+      scale: 1.4
+  @media (min-width: 1500px)
     @supports (zoom: 1.5)
       zoom: 1.5
     @supports not (zoom: 1.5)
       scale: 1.5
+  @media (min-width: 1700px)
+    @supports (zoom: 1.7)
+      zoom: 1.7
+    @supports not (zoom: 1.7)
+      scale: 1.7
+  @media (min-width: 2000px)
+    @supports (zoom: 2)
+      zoom: 2
+    @supports not (zoom: 2)
+      scale: 2
 
 .carousel
-  @supports (zoom: 0.6)
+  @supports (zoom: 1)
     zoom: 0.6
-  @supports not (zoom: 0.6)
+  @supports not (zoom: 1)
     scale: 0.6
 
 .banner
@@ -145,4 +192,7 @@ const workVisibleIndex = ref(0);
 
 .text
   font-size: 10px
+
+.width-transition
+  transition: width 0.5s ease-in-out
 </style>
