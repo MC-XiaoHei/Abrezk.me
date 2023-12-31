@@ -54,9 +54,10 @@
               <div class="banner text-caption">
                 <p>我画的?画</p>
               </div>
-              <my-card>
+              <my-card style="background-color: rgba(0,0,0,0.5)">
                 <q-carousel
                   animated
+                  style="background-color: rgba(0,0,0,0)"
                   v-model="slide"
                   navigation
                   infinite
@@ -76,11 +77,11 @@
           <div class="q-pt-md" style="flex: 1 1 auto">
             <div class="fit row justify-start items-start content-start no-wrap"
                  style="gap: 8px">
-              <q-card  style="background-color: rgba(0,0,0,0.5)"
-                       class="full-height animation"
-                       :style="{ flexGrow: workVisibleIndex === index ? 1 : 0, minWidth: '15px' }"
-                       @click="workVisibleIndex = index"
-                       v-for="(src,index) in workImageIndex" :key="src">
+              <q-card style="background-color: rgba(0,0,0,0.5)"
+                      class="full-height animation"
+                      :style="{ flexGrow: workVisibleIndex === index ? 1 : 0, minWidth: '15px' }"
+                      @click="workVisibleIndex = index"
+                      v-for="(src,index) in workImageIndex" :key="src">
               </q-card>
             </div>
           </div>
