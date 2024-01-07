@@ -1,7 +1,9 @@
 const drawImageIndex = [
-  'https://cdn.quasar.dev/img/mountains.jpg',
-  'https://cdn.quasar.dev/img/parallax2.jpg',
-  'https://cdn.quasar.dev/img/parallax1.jpg',
-  'https://cdn.quasar.dev/img/quasar.jpg',
+  '/images/slide/1.jpg',
+  '/images/slide/2.jpg',
+  '/images/slide/3.jpg',
+  '/images/slide/4.jpg',
+  '/images/slide/5.jpg',
+  '/images/slide/6.jpg',
 ];
 export default drawImageIndex;

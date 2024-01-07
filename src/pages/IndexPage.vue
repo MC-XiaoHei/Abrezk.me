@@ -52,7 +52,7 @@
           <q-responsive :ratio="1">
             <div class="fit" style="overflow: hidden;position: relative">
               <div class="banner text-caption">
-                <p>我画的?画</p>
+                <p>大人请吃</p>
               </div>
               <my-card style="background-color: rgba(0,0,0,0.5)">
                 <q-carousel
