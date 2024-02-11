@@ -30,7 +30,7 @@ const slideUrls = [
       </div>
       <div class="w-7/12 h-full order-2 lg:order-none flex flex-col gap-y-5">
         <glass-card class="text-left flex-grow sm:flex-initial">
-          <div class="p-5 sm:p-6">
+          <div class="p-5 sm:p-6 text-white">
             <p>
               Abrezk，也许可以叫标本。
             </p><br class="hidden sm:block " />
