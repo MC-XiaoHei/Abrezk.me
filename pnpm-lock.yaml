@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  cn-fontsource-smiley-sans-oblique-regular:
+    specifier: ^1.0.1
+    version: 1.0.1
   swiper:
     specifier: ^11.0.6
     version: 11.0.6
@@ -678,6 +681,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /cn-fontsource-smiley-sans-oblique-regular@1.0.1:
+    resolution: {integrity: sha512-F011I+Kic76lo/hoQbZGoVxd+P7/UeKazE3HbgwZkhjhA9AD//mmyyn6MIDbQe7lsQaPvRUKslrRIni/EusJtw==, tarball: https://registry.npmmirror.com/cn-fontsource-smiley-sans-oblique-regular/-/cn-fontsource-smiley-sans-oblique-regular-1.0.1.tgz}
+    dev: false
 
   /color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==, tarball: https://registry.npmmirror.com/color-convert/-/color-convert-2.0.1.tgz}

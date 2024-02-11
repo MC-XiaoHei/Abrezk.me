@@ -4,8 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-const modules = [Autoplay, Pagination]
-
+const modules = [Autoplay, Pagination];
 const slideUrls = [
   'https://s11.ax1x.com/2024/02/11/pF3b3sU.webp',
   'https://s11.ax1x.com/2024/02/11/pF3buin.webp',
@@ -17,8 +16,8 @@ const slideUrls = [
 </script>
 
 <template>
-  <div class="text-3xl mb-6 lg:hidden">不是所有破碎的事情，<br />都值得修补。</div>
-  <div class="text-4xl mb-8 hidden lg:block">不是所有破碎的事情都值得修补。</div>
+  <div class="text-3xl mb-6 sm:hidden whitespace-nowrap text-white">不是所有破碎的事情，<br />都值得修补。</div>
+  <div class="text-4xl mb-8 hidden sm:block whitespace-nowrap text-white">不是所有破碎的事情都值得修补。</div>
   <div
     class="w-full h-[70vh] sm:w-[470px] sm:h-[920px] lg:w-[940px] lg:h-[460px] xl:w-[1100px] xl:h-[555px] flex flex-wrap lg:flex-nowrap gap-x-0 lg:gap-x-5 gap-y-5 lg:gap-y-0">
     <div class="w-full h-1/2 lg:h-full flex gap-x-5">
@@ -31,7 +30,7 @@ const slideUrls = [
       </div>
       <div class="w-7/12 h-full order-2 lg:order-none flex flex-col gap-y-5">
         <glass-card class="text-left">
-          <div class="p-6 font-bold">
+          <div class="p-6">
             <p>
               Abrezk，也许可以叫标本。
             </p><br />
@@ -72,6 +71,7 @@ const slideUrls = [
       </div>
     </div>
   </div>
+
 </template>
 
 <style scoped>
@@ -79,6 +79,7 @@ const slideUrls = [
 :deep(.swiper-pagination-bullet) {
   background: grey;
 }
+
 :deep(.swiper-pagination-bullet-active) {
   background: dimgrey;
 }
