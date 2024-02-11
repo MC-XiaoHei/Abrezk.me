@@ -29,21 +29,21 @@ const slideUrls = [
         <glass-card class="flex-grow"></glass-card>
       </div>
       <div class="w-7/12 h-full order-2 lg:order-none flex flex-col gap-y-5">
-        <glass-card class="text-left">
-          <div class="p-6">
+        <glass-card class="text-left flex-grow sm:flex-initial">
+          <div class="p-5 sm:p-6">
             <p>
               Abrezk，也许可以叫标本。
-            </p><br />
+            </p><br class="hidden sm:block " />
             <p>
               博览闲书的空想家，今天也在无所事事中安然度日。
-            </p><br />
+            </p><br class="hidden sm:block" />
             <p>
               写不出作品的OC人，希望有一天可以在游戏中与你相遇(●'◡'●)。
             </p>
           </div>
 
         </glass-card>
-        <glass-card class="flex-grow"></glass-card>
+        <glass-card class="flex-grow hidden sm:block"></glass-card>
       </div>
     </div>
     <div class="w-full h-1/2 lg:h-full flex gap-x-5">
