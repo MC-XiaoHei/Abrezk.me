@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e4f780e-ad7e-4958-9e2d-e7a480c6f2bb" name="更改" comment="delete api example content" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MC-XiaoHei&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MC-XiaoHei/Abrezk.me.git&quot;,
+    &quot;accountId&quot;: &quot;3e1ff945-d7b5-4828-84b3-c4c4f0bb25a6&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2c9uD3bcnQ7UJEaxzg6DOS4GAOg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project/Abrezk.me&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.docs:build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.docs:dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\241.14494.240\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Abrezk.me\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\Abrezk.me\src" />
+      <recent name="D:\Project\Abrezk.me\src\assets" />
+      <recent name="D:\Project\Abrezk.me\src\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.docs:dev">
+    <configuration name="docs:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docs:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.docs:build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="6e4f780e-ad7e-4958-9e2d-e7a480c6f2bb" name="更改" comment="" />
+      <created>1707535992859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707535992859</updated>
+      <workItem from="1707535994088" duration="167000" />
+      <workItem from="1707536260030" duration="1498000" />
+      <workItem from="1707539252017" duration="645000" />
+      <workItem from="1707546805483" duration="10666000" />
+      <workItem from="1707570430020" duration="6838000" />
+      <workItem from="1707620902329" duration="3219000" />
+      <workItem from="1707633611204" duration="77000" />
+      <workItem from="1707633832561" duration="60000" />
+      <workItem from="1707634117131" duration="7679000" />
+      <workItem from="1707801728875" duration="82000" />
+      <workItem from="1707809757899" duration="96000" />
+      <workItem from="1713654411612" duration="3045000" />
+    </task>
+    <task id="LOCAL-00001" summary="init: I will rewrite this project">
+      <option name="closed" value="true" />
+      <created>1707536348284</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707536348284</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: finish layout">
+      <option name="closed" value="true" />
+      <created>1707626850347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707626850347</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: change font family">
+      <option name="closed" value="true" />
+      <created>1707633682553</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707633682553</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: change font family">
+      <option name="closed" value="true" />
+      <created>1707633838872</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707633838872</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: use SmileySans">
+      <option name="closed" value="true" />
+      <created>1707648115397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707648115397</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: performance small device">
+      <option name="closed" value="true" />
+      <created>1707648952449</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707648952449</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: performance small device">
+      <option name="closed" value="true" />
+      <created>1707648984345</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707648984345</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add blog">
+      <option name="closed" value="true" />
+      <created>1713654931457</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713654931457</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update url">
+      <option name="closed" value="true" />
+      <created>1713655545462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713655545462</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add vercel.json">
+      <option name="closed" value="true" />
+      <created>1713676167484</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713676167484</updated>
+    </task>
+    <task id="LOCAL-00011" summary="delete api example content">
+      <option name="closed" value="true" />
+      <created>1713676445270</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713676445270</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init: I will rewrite this project" />
+    <MESSAGE value="feat: finish layout" />
+    <MESSAGE value="fix: change font family" />
+    <MESSAGE value="feat: use SmileySans" />
+    <MESSAGE value="feat: performance small device" />
+    <MESSAGE value="add blog" />
+    <MESSAGE value="update url" />
+    <MESSAGE value="add vercel.json" />
+    <MESSAGE value="delete api example content" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete api example content" />
+  </component>
+</project>
