@@ -5,6 +5,11 @@
 # Site
 title: 脑髓地狱
 subtitle:
+  enable: true
+  effect: false
+  loop: false
+  sub:
+    - '不是所有破碎的事情都值得修补。'
 description: '不是所有破碎的事情都值得修补。'
 keywords:
 author: Abrezk
@@ -102,3 +107,10 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+canvas_nest:
+  enable: true
+  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
+  zIndex: -1 # z-index property of the background, default: -1.
+  count: 99 # the number of lines, default: 99.
+  mobile: false # false 手机端不显示 true 手机端显示
