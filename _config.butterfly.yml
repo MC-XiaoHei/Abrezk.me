@@ -916,7 +916,7 @@ inject:
     # 自定义css
     - <link rel="stylesheet" href="/css/style.css?1">
   bottom:
-    - <script src="/js/script.js?1"></script>
+    - <script data-pjax async src="/js/script.js?1"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
