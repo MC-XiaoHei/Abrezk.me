@@ -783,7 +783,7 @@ wordcount:
   enable: true
   post_wordcount: true
   min2read: true
-  total_wordcount: true
+  total_wordcount: false
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
